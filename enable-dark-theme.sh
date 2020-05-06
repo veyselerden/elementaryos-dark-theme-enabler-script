@@ -8,9 +8,8 @@ gtk-application-prefer-dark-theme=1
 DELIM
 
 #ENABLE PLANK DARK THEME
-
-sudo mv /usr/share/themes/elementary/plank/dock.theme /usr/share/themes/elementary/plank/dock.theme.light.backup
-sudo mv /usr/share/themes/elementary/plank/dock-dark.theme /usr/share/themes/elementary/plank/dock.theme
+sudo \cp -Rf dock-dark.theme /usr/share/themes/elementary/plank/dock.theme
+sudo chmod 644 /usr/share/themes/elementary/plank/dock.theme
 
 echo "Log out and log in back to enable the dark theme."
 
